@@ -1,0 +1,147 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "artist": {
+      "type": "string",
+      "title": "Artist"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "price": {
+      "type": "number",
+      "title": "Price"
+    },
+    "original_price": {
+      "type": "number",
+      "title": "Original Price"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "Image URL"
+    },
+    "gallery_images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Gallery Images"
+    },
+    "amazon_url": {
+      "type": "string",
+      "title": "Amazon Affiliate URL"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category",
+      "enum": [
+        "vinyl",
+        "merch",
+        "new_release"
+      ]
+    },
+    "subcategory": {
+      "type": "string",
+      "title": "Subcategory"
+    },
+    "genre": {
+      "type": "string",
+      "title": "Genre"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Tags"
+    },
+    "rating": {
+      "type": "number",
+      "title": "Rating"
+    },
+    "review_count": {
+      "type": "number",
+      "title": "Review Count"
+    },
+    "is_trending": {
+      "type": "boolean",
+      "title": "Trending"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "title": "Featured"
+    },
+    "is_bestseller": {
+      "type": "boolean",
+      "title": "Bestseller"
+    },
+    "is_limited_edition": {
+      "type": "boolean",
+      "title": "Limited Edition"
+    },
+    "is_new": {
+      "type": "boolean",
+      "title": "New"
+    },
+    "release_date": {
+      "type": "string",
+      "title": "Release Date"
+    },
+    "availability": {
+      "type": "string",
+      "title": "Availability",
+      "enum": [
+        "in_stock",
+        "low_stock",
+        "pre_order",
+        "out_of_stock"
+      ]
+    },
+    "specs": {
+      "type": "string",
+      "title": "Specifications (JSON)"
+    },
+    "pros": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Pros"
+    },
+    "cons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Cons"
+    },
+    "affiliate_clicks": {
+      "type": "number",
+      "title": "Affiliate Clicks"
+    },
+    "collection": {
+      "type": "string",
+      "title": "Collection"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "active",
+        "draft",
+        "archived"
+      ]
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "price"
+  ]
+}

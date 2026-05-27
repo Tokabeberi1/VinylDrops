@@ -1,0 +1,25 @@
+{
+  "name": "AffiliateClick",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "title": "Product ID"
+    },
+    "product_title": {
+      "type": "string",
+      "title": "Product Title"
+    },
+    "user_email": {
+      "type": "string",
+      "title": "User Email"
+    },
+    "amazon_url": {
+      "type": "string",
+      "title": "Amazon URL"
+    }
+  },
+  "required": [
+    "product_id"
+  ]
+}

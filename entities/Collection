@@ -1,0 +1,29 @@
+{
+  "name": "Collection",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "Image URL"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "title": "Featured"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
